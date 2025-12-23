@@ -1,0 +1,10 @@
+# ملف render.yaml - ضعيه في نفس مجلد index.html
+services:
+  - type: web
+    name: cybersecurity-project
+    env: static
+    buildCommand: ""  # لا يوجد بناء لأنها صفحة ثابتة
+    staticPublishPath: ./  # المسار الذي يحتوي على الملفات
+    envVars:
+      - key: NODE_ENV
+        value: production
